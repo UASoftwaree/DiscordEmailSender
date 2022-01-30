@@ -4,10 +4,10 @@ import discord
 from discord.ext import commands
 import json
 
-user = os.environ['user'] # Email
-password = os.environ['password'] # Password
-token = os.environ['token'] # Discord Token
-email = "" # Target Email Here
+user = "" # Your Email
+password = "" # Your Email Password
+token = "" # Discord Bot Token
+targetEmail = {"", ""} # Target / Targets Email Here
 
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -22,10 +22,10 @@ async def say(ctx, message=None):
   await ctx.send(message)
 
 @bot.command()
-async def feedback(ctx, * ,message=None):
+async def fb(ctx, * ,message=None):
 
   server.sendmail(user,
-    email,
+    targetEmail,
     message
   )
 
