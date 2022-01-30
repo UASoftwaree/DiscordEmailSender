@@ -1,5 +1,5 @@
 # DiscordEmailSender
 
-## I made this discord bot just for fun and do not intent on using it for malicious purposes.
+#### I made this discord bot just for fun and do not intent on using it for malicious purposes.
 
-## If you find this great then give it a try.
+#### If you find this great then give it a try in your own environment
