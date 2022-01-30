@@ -13,13 +13,8 @@ targetEmail = {"", ""} # Target / Targets Email Here
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 server.login(user, password)
+
 bot = commands.Bot(command_prefix="!")
-
-
-
-@bot.command()
-async def say(ctx, message=None):
-  await ctx.send(message)
 
 @bot.command()
 async def fb(ctx, * ,message=None):
